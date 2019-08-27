@@ -50,6 +50,13 @@ class Song
   end 
   
   def self.artist_count
-    
+    art_count = {} 
+    @@artists.each do |name|
+      unless art_count.include?(name)
+        art_count[name] = 0 
+      end
+      art_count[name] += 1 
+    end
+    art_count
   end
 end 
