@@ -27,4 +27,20 @@ class Song
     end
     non_rep_art
   end
+  
+  def self.genres 
+    non_rep_gen = []
+    @@genres.each do |genre|
+      unless non_rep_art.include?(genre)
+        non_rep_art << artist
+      end
+    end
+    non_rep_art
+  end
+  
+  def self.genre_count
+    
+  end 
+  
+  def self.artist_count
 end 
