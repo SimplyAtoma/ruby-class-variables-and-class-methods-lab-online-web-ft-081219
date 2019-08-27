@@ -32,10 +32,10 @@ class Song
     non_rep_gen = []
     @@genres.each do |genre|
       unless non_rep_art.include?(genre)
-        non_rep_art << artist
+        non_rep_gen << genre
       end
     end
-    non_rep_art
+    non_rep_gen
   end
   
   def self.genre_count
