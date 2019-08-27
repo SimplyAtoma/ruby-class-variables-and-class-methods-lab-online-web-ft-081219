@@ -46,6 +46,7 @@ class Song
       end
       gen_count[genre] += 1 
     end
+    gen_count
   end 
   
   def self.artist_count
