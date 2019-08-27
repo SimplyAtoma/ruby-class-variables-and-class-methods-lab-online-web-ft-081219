@@ -31,7 +31,7 @@ class Song
   def self.genres 
     non_rep_gen = []
     @@genres.each do |genre|
-      unless non_rep_art.include?(genre)
+      unless non_rep_gen.include?(genre)
         non_rep_gen << genre
       end
     end
